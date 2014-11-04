@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+  <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
   <link rel="stylesheet" href="/css/normalize.css">
   <!--
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/js/application.js"></script>
-
-  <title></title>
+  <title>DEV-CHAT</title>
 </head>
 <body>
+  <% if current_user %>
+    <form action="/signout" method="post">
+      <input id="log" type="submit" value="logout">
+    </form>
+    <form action="/user/<%= current_user.id %>" method="get">
+      <input id="log" type="submit" value="Chat">
+    </form>
+  <% end %>
+  <h1 class="logo">WELCOME TO DEVCHAT</h1>
   <%= yield %>
 </body>
 </html>

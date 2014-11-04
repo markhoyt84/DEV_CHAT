@@ -1,0 +1,82 @@
+body{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.signup {
+  float: center;
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  clear: both;
+}
+
+div.text em {
+  color: red;
+  float: center;
+  font-size: 1.3em;
+}
+
+div.other em {
+  color: blue;
+  float: center;
+  font-size: 1.3em;
+}
+
+div.text {
+  color: white;
+  font-size: 1.3em;
+
+}
+
+div.other {
+  color: green;
+  font-size: 1.3em;
+}
+
+#log {
+  float: right;
+}
+
+#messagesDiv {
+  padding-top: 75px;
+  float: center;
+  margin-right: 25%;
+  margin-left: 10%;
+  width: auto;
+  height: 600px;
+  text-align: center;
+  background-repeat: none;
+}
+
+#bkgrd {
+  background-image: url(http://computerrepair-vancouver.org/wp-content/uploads/2012/05/used-computer.png);
+  background-size: auto;
+  background-repeat: none;
+  width: auto;
+  background-position: center;
+  height: 800px;
+  float: center;
+  margin-left: 15%;
+}
+
+#profile {
+  text-align: center;
+}
+
+#messageInput {
+  float: center;
+}
+
+#start_chat {
+  margin: 0 auto;
+  float: center;
+}
+
+.center {
+  width: 20%;
+  margin: 0 auto;
+}

@@ -1,0 +1,14 @@
+<div class="profile">
+<h1 class="logo">Welcome <%= current_user.username %></h1>
+  <div class="center">
+  <input style="visibility: visible" id="start_chat" type="button" value="Start Chatting">
+  <input style="visibility: hidden" type='text' id='nameInput' value="<%=@user.username%>" >
+</div>
+<div id="chatroom" style="visibility: hidden">
+  <div class="center"><input type='text' id='messageInput' placeholder='Type Message Here...'></div><br>
+  <div id="bkgrd">
+<div id='messagesDiv'></div>
+</div>
+</div>
+</div>
+  <script src="/js/chatroom.js"></script>
